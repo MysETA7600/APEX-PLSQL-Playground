@@ -7,19 +7,19 @@ wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2022.10.07'
 ,p_release=>'22.2.2'
 ,p_default_workspace_id=>9948104087715249
-,p_default_application_id=>1177600
+,p_default_application_id=>77600
 ,p_default_id_offset=>34766150854088215
 ,p_default_owner=>'WKSP_DEV'
 );
 wwv_flow_imp_shared.create_data_profile(
- p_id=>wwv_flow_imp.id(17093884903842)
+ p_id=>wwv_flow_imp.id(34783244738992057)
 ,p_name=>'Tables'
 ,p_format=>'JSON'
 ,p_row_selector=>'links'
 );
 wwv_flow_imp_shared.create_data_profile_col(
- p_id=>wwv_flow_imp.id(17284378903847)
-,p_data_profile_id=>wwv_flow_imp.id(17093884903842)
+ p_id=>wwv_flow_imp.id(34783435232992062)
+,p_data_profile_id=>wwv_flow_imp.id(34783244738992057)
 ,p_name=>'REL'
 ,p_sequence=>1
 ,p_is_primary_key=>true
@@ -30,8 +30,8 @@ wwv_flow_imp_shared.create_data_profile_col(
 ,p_selector=>'rel'
 );
 wwv_flow_imp_shared.create_data_profile_col(
- p_id=>wwv_flow_imp.id(17616087903848)
-,p_data_profile_id=>wwv_flow_imp.id(17093884903842)
+ p_id=>wwv_flow_imp.id(34783766941992063)
+,p_data_profile_id=>wwv_flow_imp.id(34783244738992057)
 ,p_name=>'HREF'
 ,p_sequence=>2
 ,p_column_type=>'DATA'
