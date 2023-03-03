@@ -7,12 +7,12 @@ wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2022.10.07'
 ,p_release=>'22.2.2'
 ,p_default_workspace_id=>9948104087715249
-,p_default_application_id=>77600
+,p_default_application_id=>1177600
 ,p_default_id_offset=>34766150854088215
 ,p_default_owner=>'WKSP_DEV'
 );
 wwv_flow_imp_shared.create_template(
- p_id=>wwv_flow_imp.id(50977653070566201)
+ p_id=>wwv_flow_imp.id(16211502216477986)
 ,p_theme_id=>42
 ,p_name=>'Wizard Modal Dialog'
 ,p_internal_name=>'WIZARD_MODAL_DIALOG'
@@ -143,8 +143,8 @@ wwv_flow_imp_shared.create_template(
 ,p_reference_id=>2120348229686426515
 );
 wwv_flow_imp_shared.create_page_tmpl_display_point(
- p_id=>wwv_flow_imp.id(50978008945566201)
-,p_page_template_id=>wwv_flow_imp.id(50977653070566201)
+ p_id=>wwv_flow_imp.id(16211858091477986)
+,p_page_template_id=>wwv_flow_imp.id(16211502216477986)
 ,p_name=>'Wizard Body'
 ,p_placeholder=>'BODY'
 ,p_has_grid_support=>true
@@ -155,8 +155,8 @@ wwv_flow_imp_shared.create_page_tmpl_display_point(
 ,p_max_fixed_grid_columns=>12
 );
 wwv_flow_imp_shared.create_page_tmpl_display_point(
- p_id=>wwv_flow_imp.id(50978326058566201)
-,p_page_template_id=>wwv_flow_imp.id(50977653070566201)
+ p_id=>wwv_flow_imp.id(16212175204477986)
+,p_page_template_id=>wwv_flow_imp.id(16211502216477986)
 ,p_name=>'Wizard Progress Bar'
 ,p_placeholder=>'REGION_POSITION_01'
 ,p_has_grid_support=>false
@@ -166,8 +166,8 @@ wwv_flow_imp_shared.create_page_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_page_tmpl_display_point(
- p_id=>wwv_flow_imp.id(50978619228566201)
-,p_page_template_id=>wwv_flow_imp.id(50977653070566201)
+ p_id=>wwv_flow_imp.id(16212468374477986)
+,p_page_template_id=>wwv_flow_imp.id(16211502216477986)
 ,p_name=>'Wizard Buttons'
 ,p_placeholder=>'REGION_POSITION_03'
 ,p_has_grid_support=>false

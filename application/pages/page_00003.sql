@@ -7,7 +7,7 @@ wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2022.10.07'
 ,p_release=>'22.2.2'
 ,p_default_workspace_id=>9948104087715249
-,p_default_application_id=>77600
+,p_default_application_id=>1177600
 ,p_default_id_offset=>34766150854088215
 ,p_default_owner=>'WKSP_DEV'
 );
@@ -25,10 +25,10 @@ wwv_flow_imp_page.create_page(
 ,p_last_upd_yyyymmddhh24miss=>'20230226114924'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(17395055805092678)
+ p_id=>wwv_flow_imp.id(17371095048995537)
 ,p_plug_name=>'all_tabs'
 ,p_region_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(51040607494566238)
+,p_plug_template=>wwv_flow_imp.id(16274456640478023)
 ,p_plug_display_sequence=>10
 ,p_query_type=>'SQL'
 ,p_plug_source=>'SELECT TABLE_NAME FROM USER_TABLES;'
@@ -36,7 +36,7 @@ wwv_flow_imp_page.create_page_plug(
 ,p_prn_page_header=>'all_tabs'
 );
 wwv_flow_imp_page.create_worksheet(
- p_id=>wwv_flow_imp.id(17395163502092678)
+ p_id=>wwv_flow_imp.id(17370987351995537)
 ,p_name=>'all_tabs'
 ,p_max_row_count_message=>'The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.'
 ,p_no_data_found_message=>'No data found.'
@@ -52,7 +52,7 @@ wwv_flow_imp_page.create_worksheet(
 ,p_internal_uid=>17395163502092678
 );
 wwv_flow_imp_page.create_worksheet_column(
- p_id=>wwv_flow_imp.id(17395553282092696)
+ p_id=>wwv_flow_imp.id(17370597571995519)
 ,p_db_column_name=>'TABLE_NAME'
 ,p_display_order=>1
 ,p_column_identifier=>'A'
@@ -63,7 +63,7 @@ wwv_flow_imp_page.create_worksheet_column(
 ,p_use_as_row_header=>'N'
 );
 wwv_flow_imp_page.create_worksheet_rpt(
- p_id=>wwv_flow_imp.id(17396987750108838)
+ p_id=>wwv_flow_imp.id(17369163103979377)
 ,p_application_user=>'APXWS_DEFAULT'
 ,p_report_seq=>10
 ,p_report_alias=>'173970'
