@@ -7,7 +7,7 @@ wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2022.10.07'
 ,p_release=>'22.2.2'
 ,p_default_workspace_id=>9948104087715249
-,p_default_application_id=>1177600
+,p_default_application_id=>77600
 ,p_default_id_offset=>34766150854088215
 ,p_default_owner=>'WKSP_DEV'
 );
@@ -25,9 +25,9 @@ wwv_flow_imp_page.create_page(
 ,p_last_upd_yyyymmddhh24miss=>'20230226161016'
 );
 wwv_flow_imp_page.create_report_region(
- p_id=>wwv_flow_imp.id(17354318891414122)
+ p_id=>wwv_flow_imp.id(17411831962674093)
 ,p_name=>'all_sequences'
-,p_template=>wwv_flow_imp.id(16284230064478031)
+,p_template=>wwv_flow_imp.id(51050380918566246)
 ,p_display_sequence=>10
 ,p_region_template_options=>'#DEFAULT#:t-Region--noPadding:t-Region--hideHeader:t-Region--scrollBody'
 ,p_component_template_options=>'#DEFAULT#:t-Report--stretch:t-Report--staticRowColors:t-Report--rowHighlight:t-Report--inline:t-Report--hideNoPagination'
@@ -36,7 +36,7 @@ wwv_flow_imp_page.create_report_region(
 ,p_source=>'SELECT SEQUENCE_NAME FROM USER_SEQUENCES'
 ,p_ajax_enabled=>'Y'
 ,p_lazy_loading=>false
-,p_query_row_template=>wwv_flow_imp.id(16322180780478053)
+,p_query_row_template=>wwv_flow_imp.id(51088331634566268)
 ,p_query_num_rows=>50
 ,p_query_options=>'DERIVED_REPORT_COLUMNS'
 ,p_query_no_data_found=>'no data found'
@@ -49,7 +49,7 @@ wwv_flow_imp_page.create_report_region(
 ,p_plug_query_strip_html=>'N'
 );
 wwv_flow_imp_page.create_report_columns(
- p_id=>wwv_flow_imp.id(17353858659414116)
+ p_id=>wwv_flow_imp.id(17412292194674099)
 ,p_query_column_id=>1
 ,p_column_alias=>'SEQUENCE_NAME'
 ,p_column_display_sequence=>1

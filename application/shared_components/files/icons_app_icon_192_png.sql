@@ -7,7 +7,7 @@ wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2022.10.07'
 ,p_release=>'22.2.2'
 ,p_default_workspace_id=>9948104087715249
-,p_default_application_id=>1177600
+,p_default_application_id=>77600
 ,p_default_id_offset=>34766150854088215
 ,p_default_owner=>'WKSP_DEV'
 );
@@ -71,7 +71,7 @@ wwv_flow_imp.g_varchar2_table(56) := '0094763F1BCF02600E288D000B4069F7B3F12C00E6
 wwv_flow_imp.g_varchar2_table(57) := '0094763F1BCF02600E288D000B4069F7B3F12C00E680D208B00094763F1BCF02600E288D000B4069F7B3F12C00E680D208B00094763F1BCF02600E288D000B4069F7B3F12C00E680D208B00094763F1BCF02600E288D801080476908D8787511D0807F02';
 wwv_flow_imp.g_varchar2_table(58) := 'EECE8F87DA6A02E20000000049454E44AE426082';
 wwv_flow_imp_shared.create_app_static_file(
- p_id=>wwv_flow_imp.id(16383656113478110)
+ p_id=>wwv_flow_imp.id(18885714730949832)
 ,p_file_name=>'icons/app-icon-192.png'
 ,p_mime_type=>'image/png'
 ,p_file_charset=>'utf-8'

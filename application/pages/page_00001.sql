@@ -7,7 +7,7 @@ wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2022.10.07'
 ,p_release=>'22.2.2'
 ,p_default_workspace_id=>9948104087715249
-,p_default_application_id=>1177600
+,p_default_application_id=>77600
 ,p_default_id_offset=>34766150854088215
 ,p_default_owner=>'WKSP_DEV'
 );
@@ -112,20 +112,30 @@ wwv_flow_imp_page.create_page(
 ,p_protection_level=>'C'
 ,p_page_component_map=>'13'
 ,p_last_updated_by=>'SAITAMA'
-,p_last_upd_yyyymmddhh24miss=>'20230303035831'
+,p_last_upd_yyyymmddhh24miss=>'20230307095809'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(16393024836478132)
+ p_id=>wwv_flow_imp.id(51159175690566347)
 ,p_plug_name=>'<h3 style="color:white;">APEX PLAYGROUND<h3>'
 ,p_region_template_options=>'#DEFAULT#:t-HeroRegion--noPadding'
-,p_plug_template=>wwv_flow_imp.id(16251278352478011)
+,p_plug_template=>wwv_flow_imp.id(51017429206566226)
 ,p_plug_display_sequence=>10
 ,p_plug_display_point=>'BEFORE_NAVIGATION_BAR'
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
-'<style>',
-'    ',
-'div.t-Header-navBar {text-align: left;}',
-'</style>'))
+'<link rel="stylesheet" href="[path_to_codemirror]/codemirror.css">',
+'<script src="[path_to_codemirror]/codemirror.js"></script>',
+'<script src="[path_to_codemirror]/mode/sql/sql.js"></script>',
+'<script>',
+'  var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("CODE"), {',
+'    mode: "text/x-sql",',
+'    indentWithTabs: true,',
+'    smartIndent: true,',
+'    lineNumbers: true,',
+'    matchBrackets: true,',
+'    autofocus: true',
+'  });',
+'</script>',
+''))
 ,p_plug_query_num_rows=>15
 ,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
 ,p_region_image=>'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Kcp_aAsBhLobVnojlfORCkGzKt263Qyr5Q&usqp=CAU'
@@ -134,12 +144,12 @@ wwv_flow_imp_page.create_page_plug(
 ,p_attribute_03=>'Y'
 );
 wwv_flow_imp_page.create_page_button(
- p_id=>wwv_flow_imp.id(16410320712568050)
+ p_id=>wwv_flow_imp.id(51176471566656265)
 ,p_button_sequence=>40
 ,p_button_name=>'Execute'
 ,p_button_action=>'SUBMIT'
 ,p_button_template_options=>'#DEFAULT#:t-Button--large:t-Button--iconLeft'
-,p_button_template_id=>wwv_flow_imp.id(16357252212478076)
+,p_button_template_id=>wwv_flow_imp.id(51123403066566291)
 ,p_button_is_hot=>'Y'
 ,p_button_image_alt=>'Execute/Compile'
 ,p_icon_css_classes=>'fa-lg fa-play-circle-o'
@@ -149,12 +159,12 @@ wwv_flow_imp_page.create_page_button(
 ,p_database_action=>'INSERT'
 );
 wwv_flow_imp_page.create_page_button(
- p_id=>wwv_flow_imp.id(18231851801675879)
+ p_id=>wwv_flow_imp.id(16534299052412336)
 ,p_button_sequence=>50
 ,p_button_name=>'Clear'
 ,p_button_action=>'DEFINED_BY_DA'
 ,p_button_template_options=>'#DEFAULT#:t-Button--large:t-Button--iconLeft'
-,p_button_template_id=>wwv_flow_imp.id(16357252212478076)
+,p_button_template_id=>wwv_flow_imp.id(51123403066566291)
 ,p_button_is_hot=>'Y'
 ,p_button_image_alt=>'Clear'
 ,p_button_execute_validations=>'N'
@@ -165,7 +175,7 @@ wwv_flow_imp_page.create_page_button(
 ,p_grid_column=>3
 );
 wwv_flow_imp_page.create_page_item(
- p_id=>wwv_flow_imp.id(16410241823568049)
+ p_id=>wwv_flow_imp.id(51176392677656264)
 ,p_name=>'CODE'
 ,p_item_sequence=>30
 ,p_prompt=>'Code'
@@ -174,7 +184,7 @@ wwv_flow_imp_page.create_page_item(
 ,p_cHeight=>10
 ,p_colspan=>12
 ,p_grid_column=>1
-,p_field_template=>wwv_flow_imp.id(16354650434478074)
+,p_field_template=>wwv_flow_imp.id(51120801288566289)
 ,p_item_template_options=>'#DEFAULT#'
 ,p_attribute_01=>'Y'
 ,p_attribute_02=>'Y'
@@ -182,7 +192,7 @@ wwv_flow_imp_page.create_page_item(
 ,p_attribute_04=>'BOTH'
 );
 wwv_flow_imp_page.create_page_item(
- p_id=>wwv_flow_imp.id(16531782232412311)
+ p_id=>wwv_flow_imp.id(51297933086500526)
 ,p_name=>'R1'
 ,p_item_sequence=>80
 ,p_item_default=>'This is a Static Default Value'
@@ -190,7 +200,7 @@ wwv_flow_imp_page.create_page_item(
 ,p_display_as=>'NATIVE_TEXTAREA'
 ,p_cSize=>30
 ,p_cHeight=>5
-,p_field_template=>wwv_flow_imp.id(16354650434478074)
+,p_field_template=>wwv_flow_imp.id(51120801288566289)
 ,p_item_template_options=>'#DEFAULT#'
 ,p_attribute_01=>'Y'
 ,p_attribute_02=>'N'
@@ -198,7 +208,7 @@ wwv_flow_imp_page.create_page_item(
 ,p_attribute_04=>'BOTH'
 );
 wwv_flow_imp_page.create_page_item(
- p_id=>wwv_flow_imp.id(16533407371412328)
+ p_id=>wwv_flow_imp.id(51299558225500543)
 ,p_name=>'R2'
 ,p_item_sequence=>90
 ,p_item_default=>'This is a Static Default Value'
@@ -206,18 +216,18 @@ wwv_flow_imp_page.create_page_item(
 ,p_attribute_01=>'Y'
 );
 wwv_flow_imp_page.create_page_da_event(
- p_id=>wwv_flow_imp.id(18231429957675874)
+ p_id=>wwv_flow_imp.id(16534720896412341)
 ,p_name=>'New'
 ,p_event_sequence=>10
 ,p_triggering_element_type=>'BUTTON'
-,p_triggering_button_id=>wwv_flow_imp.id(18231851801675879)
+,p_triggering_button_id=>wwv_flow_imp.id(16534299052412336)
 ,p_bind_type=>'bind'
 ,p_execution_type=>'IMMEDIATE'
 ,p_bind_event_type=>'click'
 );
 wwv_flow_imp_page.create_page_da_action(
- p_id=>wwv_flow_imp.id(18231253166675873)
-,p_event_id=>wwv_flow_imp.id(18231429957675874)
+ p_id=>wwv_flow_imp.id(16534897687412342)
+,p_event_id=>wwv_flow_imp.id(16534720896412341)
 ,p_event_result=>'TRUE'
 ,p_action_sequence=>10
 ,p_execute_on_page_init=>'N'
@@ -227,7 +237,7 @@ wwv_flow_imp_page.create_page_da_action(
 'divShowData.innerHTML = "";'))
 );
 wwv_flow_imp_page.create_page_process(
- p_id=>wwv_flow_imp.id(16531648989412310)
+ p_id=>wwv_flow_imp.id(51297799843500525)
 ,p_process_sequence=>10
 ,p_process_point=>'AFTER_SUBMIT'
 ,p_process_type=>'NATIVE_PLSQL'
@@ -239,12 +249,12 @@ wwv_flow_imp_page.create_page_process(
 ,p_process_clob_language=>'PLSQL'
 ,p_process_error_message=>'Error is there'
 ,p_error_display_location=>'INLINE_IN_NOTIFICATION'
-,p_process_when_button_id=>wwv_flow_imp.id(16410320712568050)
+,p_process_when_button_id=>wwv_flow_imp.id(51176471566656265)
 ,p_process_success_message=>'its Done'
 ,p_process_is_stateful_y_n=>'Y'
 );
 wwv_flow_imp_page.create_page_process(
- p_id=>wwv_flow_imp.id(16533355482412327)
+ p_id=>wwv_flow_imp.id(51299506336500542)
 ,p_process_sequence=>20
 ,p_process_point=>'AFTER_SUBMIT'
 ,p_process_type=>'NATIVE_SEND_EMAIL'
@@ -256,12 +266,12 @@ wwv_flow_imp_page.create_page_process(
 ,p_attribute_10=>'Y'
 ,p_process_error_message=>'Error is there'
 ,p_error_display_location=>'INLINE_IN_NOTIFICATION'
-,p_process_when_button_id=>wwv_flow_imp.id(16410320712568050)
+,p_process_when_button_id=>wwv_flow_imp.id(51176471566656265)
 ,p_process_success_message=>'its Done'
 ,p_process_is_stateful_y_n=>'Y'
 );
 wwv_flow_imp_page.create_page_process(
- p_id=>wwv_flow_imp.id(16580721255736808)
+ p_id=>wwv_flow_imp.id(18185429598351407)
 ,p_process_sequence=>10
 ,p_process_point=>'BEFORE_HEADER'
 ,p_process_type=>'NATIVE_PLSQL'
@@ -275,7 +285,7 @@ wwv_flow_imp_page.create_page_process(
 ,p_process_clob_language=>'PLSQL'
 );
 wwv_flow_imp_page.create_page_process(
- p_id=>wwv_flow_imp.id(16531839354412312)
+ p_id=>wwv_flow_imp.id(51297990208500527)
 ,p_process_sequence=>10
 ,p_process_point=>'ON_SUBMIT_BEFORE_COMPUTATION'
 ,p_process_type=>'NATIVE_PLSQL'
@@ -363,20 +373,13 @@ wwv_flow_imp_page.create_page_process(
 'SELECT V_URL INTO v_result FROM APEX_REST_TAB WHERE TO_CHAR(lower(V_SOURCE))=TO_CHAR(v_code);',
 'END IF;',
 'ELSE',
-'DECLARE',
-'texts DBMS_OUTPUT.CHARARR;',
-'status NUMBER;',
-'V_COUNT_TEXT NUMBER;',
-'V_INDEX NUMBER:=0;',
 'begin',
+'--APEX_APPLICATION.G_PRINT_SUCCESS_MESSAGE:=v_code;',
+'if instr(v_code,'' table '')<>0 then',
+'execute immediate v_code; ',
+'else ',
 'execute immediate v_code||'';''; ',
-'V_COUNT_TEXT:=TEXTS.COUNT;',
-'WHILE (V_COUNT_TEXT <>0)',
-'LOOP',
-'V_COUNT_TEXT:=V_COUNT_TEXT-1;',
-'V_result:=V_result||(TEXTS(V_INDEX+1));',
-'V_RESULT:=''*'';',
-'END LOOP;',
+'end if;',
 'v_result:=v_result||''PL/SQL procedure successfully completed.'';',
 'EXCEPTION',
 'when others then',
@@ -387,7 +390,7 @@ wwv_flow_imp_page.create_page_process(
 'END;'))
 ,p_process_clob_language=>'PLSQL'
 ,p_error_display_location=>'INLINE_IN_NOTIFICATION'
-,p_process_when_button_id=>wwv_flow_imp.id(16410320712568050)
+,p_process_when_button_id=>wwv_flow_imp.id(51176471566656265)
 );
 wwv_flow_imp.component_end;
 end;
